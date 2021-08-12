@@ -1,0 +1,170 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!--========== SLIDER ==========-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="container">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+    </div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img class="img-responsive" src="{% static 'img/1920x1080/01.jpg' %}" alt="Slider Image">
+            <div class="container">
+                <div class="carousel-centered">
+                    <div class="margin-b-40">
+                        <h1 class="carousel-title">INU Screening System</h1><br>
+                        <h4>If we're here, there's No place for the pandemics<br> in the Universe</h4>
+                    </div>
+                    <a href="{% url 'about' %}" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">More INU</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--========== SLIDER ==========-->
+
+<!-- Testimonials -->
+<div class="content-lg container">
+    <div class="row">
+        <div class="col-sm-9">
+            <h2>INU's Screening System,</h2><h2>새로운 전염병 방역의 기준이 될 것입니다.</h2>
+
+            <!-- Swiper Testimonials -->
+            <div class="swiper-slider swiper-testimonials">
+                <blockquote class="blockquote">
+                    <div class="margin-b-20">
+                        인류는 지금까지 수많은 감염병을 겪으며 어떻게 대처해야하는지 학습해왔습니다. '백신'이 등장하여 해당 전염병에 대해 미리 혈액 내 항체를 보유하게 만들어 감염을 예방하는 방식이였습니다.
+                        하지만 Covid-19는 그동안의 전염병과 달랐습니다. RNA 바이러스에 기반한다는 특성상 돌연변이가 흔하게 발생하여 특정한 백신과 치료제로 쉽게 막을 수 없다는 특징을 가지고 있습니다.
+                        사회적으로도 Covid-19에 대한 대처를 백신이 나오기 전까지 '마스크', '사회적 거리두기', '격리', '공공장소 운영제한/폐쇄'와 같은 방식으로만 진행하였습니다.
+                        하지만 장기화가 되면서 누적된 경제피해, 교육, 병역 등 슬기롭게 대처하지 못했습니다.
+                        이러한 현재 상황과 문제점을 해결하기 위해 INU가 나섰습니다.
+                    </div>
+                </blockquote>
+            </div>
+            <!-- End Swiper Testimonials -->
+        </div>
+    </div>
+    <!--// end row -->
+</div>
+<!-- End Testimonials -->
+
+<!-- Latest Products -->
+<div class="content-lg container">
+    <div class="row margin-b-40">
+        <div class="col-sm-6">
+            <h2>INU는 전 세계인이 감염병으로부터 안전한 세상을 만들기 위해 끊임없이 노력하고 있습니다</h2>
+        </div>
+    </div>
+    <!--// end row -->
+
+    <div class="row">
+        <!-- Latest Products -->
+        <div class="col-sm-4 sm-margin-b-50">
+            <div class="margin-b-20">
+            </div>
+            <h4><a>지금까지 사회는</a> <span class="text-uppercase margin-l-20">Present</span></h4>
+            <p>현재 Covid-19에 대항하는 Screening 기술은 거의 모든 공공장소 입구에서 진행되는 '발열체크'가 있습니다. Covid-19에 있어서 발열증상은 민감도 53.3%, 특이도 67.4%로 보고되고 있습니다.
+                보고된 바와 같이 발열증상만으로는 잠재적 보균자를 가려내기엔 꽤나 낮은 확률입니다.
+            </p>
+            <a class="link" href="https://pubmed.ncbi.nlm.nih.gov/32633856/">Read Reference</a>
+        </div>
+        <!-- End Latest Products -->
+
+        <!-- Latest Products -->
+        <div class="col-sm-4 sm-margin-b-50">
+            <div class="margin-b-20">
+            </div>
+            <h4><a>현재 연구는</a> <span class="text-uppercase margin-l-20">Research</span></h4>
+            <p>Nature npj에 따르면 여러 증상들을 기반으로 한 머신러닝으로 Covid-19를 높은 확률로 진단할 수 있다는 내용의 연구를 발표했습니다. 발열 뿐만아니라 인후통, 두통, 양성환자와의 접촉 등 10만명의 데이터를 가지고 진행하여 
+                87.3%의 민감도와 71.98%의 특이도를 가지게 되었습니다. 앞으로 데이터의 질과 양을 높인다면 더 높은 정확도의 머신러닝 모델을 기대할 수 있다고 언급하였습니다.
+            </p>
+            <a class="link" href="https://bmcinfectdis.biomedcentral.com/articles/10.1186/s12879-021-05976-1">Read Reference</a>
+        </div>
+        <!-- End Latest Products -->
+
+        <!-- Latest Products -->
+        <div class="col-sm-4 sm-margin-b-50">
+            <div class="margin-b-20">
+            </div>
+            <h4><a>앞으로 INU는</a> <span class="text-uppercase margin-l-20">Future</span></h4>
+            <p>단일 증상 기반이 아닌 복합 증상 기반 Screening을 통해 기존의 시스템보다 높은 정확도의 AI Screening 모델을 만들어 앞으로 우리가 맞이할 여러 호흡계 전염병들에 대해 
+                최고로 효율적인 방역 대책을 마련할 수 있게 됩니다. 또한, 백신의 사각지대에 놓여 Covid-19를 비롯한 전염병에 취약한 세계 빈곡국의 인류 또한 구할 수 있는 공익적인 역할을 하는 선두주자가 되겠습니다.
+            </p>
+            <a class="link" href="{% url 'about' %}">More INU</a>
+        </div>
+        <!-- End Latest Products -->
+    </div>
+    <!--// end row -->
+</div>
+<!-- End Latest Products -->
+
+
+<!-- Pricing -->
+<div class="bg-color-sky-light">
+    <div class="content-lg container">
+        <div class="row row-space-1">
+            <div class="col-sm-4 sm-margin-b-2">
+                <!-- Pricing -->
+                <div class="pricing">
+                    <div class="margin-b-30">
+                        <i class="pricing-icon icon-badge"></i>
+                        <h3>1차 목표(~2023)</h3>
+                        <p>Screening System의 보급 및 고객 확보</p>
+                    </div>
+                    <ul class="list-unstyled pricing-list margin-b-50">
+                        <li class="pricing-list-item">Customer</li>
+                        <li class="pricing-list-item">Social</li>
+                        <li class="pricing-list-item">Technology</li>
+                    </ul>
+                    <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
+                </div>
+                <!-- End Pricing -->
+            </div>
+            <div class="col-sm-4 sm-margin-b-2">
+                <!-- Pricing -->
+                <div class="pricing pricing-active">
+                    <div class="margin-b-30">
+                        <i class="pricing-icon icon-badge"></i>
+                        <h3>2차 목표(2024~)</h3>
+                        <p>Screening System의 의료데이터 플랫폼화</p>
+                    </div>
+                    <ul class="list-unstyled pricing-list margin-b-50">
+                        <li class="pricing-list-item"></li>
+                        <li class="pricing-list-item">최대한 많은 고객</li>
+                        <li class="pricing-list-item">압도적인 데이터</li>
+                    </ul>
+                    <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
+                </div>
+                <!-- End Pricing -->
+            </div>
+            <div class="col-sm-4">
+                <!-- Pricing -->
+                <div class="pricing">
+                    <div class="margin-b-30">
+                        <i class="pricing-icon icon-badge"></i>
+                        <h3>그 이후(2026~)</h3>
+                        <p>Screening System 역할 그 이상,  <br> "Invisible hospital"의 시작</p>
+                    </div>
+                    <ul class="list-unstyled pricing-list margin-b-50">
+                        <li class="pricing-list-item">뛰어난 환자 선별 시스템/li>
+                        <li class="pricing-list-item">스마트 위료 서비스의 기반</li>
+                    </ul>
+                    <a href="pricing.html" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Choose</a>
+                </div>
+                <!-- End Pricing -->
+            </div>
+        </div>
+        <!--// end row -->
+    </div>
+</div>
+<!-- End Pricing -->
+
+<!--========== END PAGE LAYOUT ==========-->
+{% endblock %}
